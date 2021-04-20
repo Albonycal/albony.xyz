@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "## `whoami`",
   "main": ".eleventy.js",
-  
-"scripts": {
+  "scripts": {
     "serve": "eleventy --serve",
     "build": "eleventy"
-  }, 
- 
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Albonycal/albonycal.github.io.git"
