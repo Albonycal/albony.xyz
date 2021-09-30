@@ -9,6 +9,7 @@
     <title>AlbonyCal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bulma.min.css">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
     <link rel="manifest" href="webmanifest.json">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
@@ -37,7 +38,7 @@
                         <ul id="bar">
                             <li><a class="now" href="#">Home</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="https://search.albony.xyz/">Search</a></li>
                         </ul>
                     </nav>
@@ -54,9 +55,23 @@
                     penetration testing, vulnerability
                     analysis, and network security.</div>
                 <div class="container">
-                    <button class="button is-dark" onclick="github()">Github</button>
-                    <button class="button is-info" onclick="twitter()">Twitter</button>
-                    <button class="button is-success" onclick="cv()">CV / résumé</button>
+                    <button class="button is-dark" onclick="github()">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>GitHub</span>
+                      </button>
+                    <button class="button is-link" onclick="twitter()">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>@albonycal</span>
+                      </button>
+                      <button class="button" onclick="cv()">
+                        <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Resume</span>
                 </div>
             </div>
         </center>
