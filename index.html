@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Moon1789 2021-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlbonyCal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+    <link rel="manifest" href="webmanifest.json">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <meta name="description" content="Albony aka Albonycal, Linux enthusiast, bug bounty hunter.">
+    <meta name="keywords"
+        content="Albony , AlbonyCal , albonycal , bug bounty , ethical hacking , linux">
+    <meta property="og:site_name" content="AlbonyCal">
+    <meta name="og:title" content="Albony">
+    <meta name="og:description" content="Albony, Linux enthusiast, bug bounty hunter.">
+    <meta name="og:image" itemprop="image" content="favicon.png">
+    <link rel="bookmark" href="favicon.png">
+</head>
+<style>
+    html {
+        overflow-y: hidden;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="section container">
+            <div class="title is-2"><img src="Albony_clear.png" alt="al"><span id="title">AlbonyCal</span></div>
+            <div class="container">
+                <header>
+                    <nav>
+                        <ul id="bar">
+                            <li><a class="now" href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </center>
+    <div class="container">
+        <center>
+            <div class="title is-3" id="intro">Hey!</div>
+            <div class="container">
+                <div id="sub" class="subtitle is-5">I'm an Cybersecurity professional with a strong interest in ethical
+                    hacking,
+                    penetration testing, vulnerability
+                    analysis, and network security.</div>
+                <div class="container">
+                    <button class="button is-dark" onclick="github()">Github</button>
+                    <button class="button is-info" onclick="twitter()">Twitter</button>
+                    <button class="button is-success" onclick="cv()">CV / résumé</button>
+                </div>
+            </div>
+        </center>
+    </div>
+    <footer id="footer">&copy; AlbonyCal 2020-2021</footer>
+</body>
+<script>
+    function github() {
+        window.location.href = "https://github.com/albonycal"
+    }
+    function twitter() {
+        window.location.href = "https://twitter.com/albonycal"
+    }
+    function cv() {
+        window.location.href = "https://www.albony.xyz/CV.pdf"
+    }
+</script>
+
+</html>
