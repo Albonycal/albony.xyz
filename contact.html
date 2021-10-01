@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bulma.min.css">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+    <link rel="manifest" href="webmanifest.json">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <meta name="description" content="Contact Me">
+    <meta name="keywords" content="Albony , AlbonyCal , albonycal , whoogle , private search, Whoogle , linux">
+    <meta property="og:site_name" content="Albony">
+    <meta name="og:title" content="Contact">
+    <meta name="og:description" content="Contact Me">
+    <meta name="og:image" itemprop="image" content="favicon.png">
+    <link rel="bookmark" href="favicon.png">
+    <title>Search</title>
+</head>
+<style>
+    html {
+        overflow-y: hidden;
+    }
+
+    #hom:hover {
+        cursor: pointer;
+    }
+
+    #idk {
+        color: ivory;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="section container">
+            <div class="title is-2" onclick="home()" id="hom" style="top: 5vh;position: relative;"><img
+                    src="Albony_clear.png" alt="al"><span id="title">AlbonyCal</span></div>
+        </div>
+        <header>
+            <nav>
+                <ul id="bar">
+                    <li><a class="now" href="index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="section container">
+            <div id="sub" class="subtitle is-5">You Can Contact Via : </div>
+            <div class="container">
+                <div id="but">
+                    <button class="button is-info" onclick="twitter()">
+                        <span class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>@albonycal</span>
+                    </button>
+                    <button class="button is-link">
+                        <span class="icon">
+                            <i class="fab fa-discord"></i>
+                        </span>
+                        <span>Albony#1335</span>
+                    </button>
+                    <button class="button is-dark">
+                        <a id="idk" href="mailto:albonycal@protonmail.com">
+                            <span>E-mail</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+    </center>
+    <footer id="footer">&copy; AlbonyCal 2020-2021</footer>
+</body>
+<script>
+    function home() {
+        window.location.href = "index.html";
+    }
+    function twitter() {
+        window.location.href = "https://twitter.com/albonycal";
+    }
+</script>
+
+</html>

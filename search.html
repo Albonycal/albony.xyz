@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,7 @@
     <link rel="manifest" href="webmanifest.json">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
     <meta name="description" content="Whoogle instance, Search Privately">
-    <meta name="keywords"
-        content="Albony , AlbonyCal , albonycal , whoogle , private search, Whoogle , linux">
+    <meta name="keywords" content="Albony , AlbonyCal , albonycal , whoogle , private search, Whoogle , linux">
     <meta property="og:site_name" content="Whoogle">
     <meta name="og:title" content="Whoogle">
     <meta name="og:description" content="Search Privately, Whoogle instance.">
@@ -24,19 +24,64 @@
     html {
         overflow-y: hidden;
     }
+
+    #power {
+        margin-right: 10px;
+        position: relative;
+        top: -1.5vh;
+        color: #685E79;
+    }
+
+    #search:hover {
+        box-shadow: 0 0 8px black;
+    }
+
+    #hom:hover {
+        cursor: pointer;
+    }
 </style>
+
 <body>
     <center>
         <div class="section container">
-            <div class="title is-2"><img src="Albony_clear.png" alt="al"><span id="title">AlbonyCal</span></div>
-            <div class="container">
-
-      </div>
+            <div class="title is-2" onclick="home()" id="hom" style="top: 5vh;position: relative;"><img
+                    src="Albony_clear.png" alt="al"><span id="title">AlbonyCal</span></div>
         </div>
-    <form method="get" action="https://search.albony.xyz/search">
-        <input type="text" style="width: 50%;border: none;background-color: rgb(252, 252, 248);" name="q" size="31" value="" class="input is-rounded" id="search" autocomplete="off" placeholder="Search Privately">
-        </form>
-            </center>
- <footer id="footer">&copy; AlbonyCal 2020-2021</footer>
+        <div class="secion container">
+            <header>
+                <nav>
+                    <ul id="bar">
+                        <li><a class="now" href="index.html">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="search.html">Search</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div style="position: relative;top: 4vh;" class="container">
+            <div class="conatiner">
+                <center>
+                    <form method="get" action="https://search.albony.xyz/search">
+                        <input id="search" type="text"
+                            style="width: 50%;border: none;background-color: rgba(255, 255, 240);" name="q" size="31"
+                            value="" class="input is-rounded" id="serch" autocomplete="off"
+                            placeholder="Search Privately">
+                    </form>
+                </center>
+            </div>
+        </div>
+        <div class="section container">
+            <div style="position: relative;top: 7vh;" class="subtitle is-3"><span id="power">Powered by</span><img
+                    src="whoogle.png" width="300px" height="100px" alt="whoogle"></div>
+        </div>
+    </center>
+    <footer id="footer">&copy; AlbonyCal 2020-2021</footer>
 </body>
+<script>
+    function home() {
+        window.location.href = "index.html";
+    }
+</script>
+
 </html>
