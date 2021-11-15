@@ -1,0 +1,4 @@
+Contact: mailto:albonycal@protonmail.com
+Expires: 2022-11-14T19:50:00.000Z
+Preferred-Languages: en
+Canonical: https://albony.xyz/.well-known/security.txt
