@@ -31,6 +31,9 @@ body {
     font-size: 22px;
     color: khaki;
 }
+#menuwu:hover {
+    color: #f1fa8c;
+}
 .now{
     color: #8be9fd;
 }
