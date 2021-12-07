@@ -23,8 +23,18 @@
 </head>
 <style>
     html {
+        overflow-x: hidden;
         overflow-y: hidden;
     }
+    @media screen and (max-width: 850px) {
+        html {
+            overflow-y: scroll;
+        }
+body {
+    height: 150%;
+}    
+}
+
 </style>
 
 <body>
@@ -35,10 +45,10 @@
                 <header>
                     <nav>
                         <ul id="bar">
-                            <li><a class="now" href="index.html">Home</a></li>
-                            <li><a href="/blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="search.html">Search</a></li>
+                            <li><a id="menuwu" class="now" href="index.html">Home</a></li>
+                            <li><a id="menuwu" style="text-decoration: line-through;" href="#">Blog</a></li>
+                            <li><a id="menuwu" href="contact.html">Contact</a></li>
+                            <li><a id="menuwu" href="search.html">Search</a></li>
                         </ul>
                     </nav>
                 </header>
