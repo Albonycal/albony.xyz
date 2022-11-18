@@ -92,6 +92,13 @@ body {
                             <i class="fab fa-twitter"></i>
                         </span>
                         <span>@albonycal</span>
+			    
+	             <button class="button is-link is-rounded" onclick="mastodon()">
+                        <span class="icon">
+                            <i class="fab fa-mastodon"></i>
+                        </span>
+                        <span>@albonycal</span>
+			    
                     </button>
                     <button class="button is-rounded" onclick="cv()">
                         <span class="icon">
@@ -118,6 +125,9 @@ body {
         // window.location.href = "CV.pdf"
         window.open('CV.pdf', '_blank');
         
+    }
+    function mastodon {
+	    window.open('https://fosstodon.org/@albonycal', rel="me" , '_blank');
     }
 </script>
 
